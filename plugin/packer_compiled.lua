@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/deadeye/.cache/nvim/packer_hererocks/2.1.1716656478/share/lua/5.1/?.lua;/home/deadeye/.cache/nvim/packer_hererocks/2.1.1716656478/share/lua/5.1/?/init.lua;/home/deadeye/.cache/nvim/packer_hererocks/2.1.1716656478/lib/luarocks/rocks-5.1/?.lua;/home/deadeye/.cache/nvim/packer_hererocks/2.1.1716656478/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/deadeye/.cache/nvim/packer_hererocks/2.1.1716656478/lib/lua/5.1/?.so"
+local package_path_str = "/home/deadeye/.cache/nvim/packer_hererocks/2.1.1767980792/share/lua/5.1/?.lua;/home/deadeye/.cache/nvim/packer_hererocks/2.1.1767980792/share/lua/5.1/?/init.lua;/home/deadeye/.cache/nvim/packer_hererocks/2.1.1767980792/lib/luarocks/rocks-5.1/?.lua;/home/deadeye/.cache/nvim/packer_hererocks/2.1.1767980792/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/deadeye/.cache/nvim/packer_hererocks/2.1.1767980792/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -79,15 +79,20 @@ _G.packer_plugins = {
     path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["alpha-nvim"] = {
+    loaded = true,
+    path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/alpha-nvim",
+    url = "https://github.com/goolord/alpha-nvim"
+  },
+  ["alpha-nvim-fortune"] = {
+    loaded = true,
+    path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/alpha-nvim-fortune",
+    url = "https://github.com/BlakeJC94/alpha-nvim-fortune"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
-  },
-  ["cmp-tabnine"] = {
-    loaded = true,
-    path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/cmp-tabnine",
-    url = "https://github.com/tzachar/cmp-tabnine"
   },
   cmp_luasnip = {
     loaded = true,
@@ -126,6 +131,14 @@ _G.packer_plugins = {
     path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
   },
+  ["lspsaga.nvim"] = {
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\flspsaga\frequire\0" },
+    load_after = {},
+    loaded = true,
+    needs_bufread = false,
+    path = "/home/deadeye/.local/share/nvim/site/pack/packer/opt/lspsaga.nvim",
+    url = "https://github.com/nvimdev/lspsaga.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -140,6 +153,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["mini.icons"] = {
+    loaded = false,
+    needs_bufread = false,
+    path = "/home/deadeye/.local/share/nvim/site/pack/packer/opt/mini.icons",
+    url = "https://github.com/echasnovski/mini.icons"
+  },
+  neopywal = {
+    loaded = true,
+    path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/neopywal",
+    url = "https://github.com/RedsXDD/neopywal.nvim"
   },
   ["nui.nvim"] = {
     loaded = true,
@@ -213,10 +237,17 @@ _G.packer_plugins = {
     path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  pywal = {
+  pywal16 = {
     loaded = true,
-    path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/pywal",
-    url = "https://github.com/AlphaTechnolog/pywal.nvim"
+    path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/pywal16",
+    url = "https://github.com/uZer/pywal16.nvim"
+  },
+  ["render-markdown.nvim"] = {
+    load_after = {},
+    loaded = true,
+    needs_bufread = false,
+    path = "/home/deadeye/.local/share/nvim/site/pack/packer/opt/render-markdown.nvim",
+    url = "https://github.com/MeanderingProgrammer/render-markdown.nvim"
   },
   ["rust-tools.nvim"] = {
     loaded = true,
@@ -228,20 +259,15 @@ _G.packer_plugins = {
     path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/rust.vim",
     url = "https://github.com/rust-lang/rust.vim"
   },
-  ["sway.vim"] = {
-    loaded = true,
-    path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/sway.vim",
-    url = "https://github.com/FuelLabs/sway.vim"
-  },
-  ["tabnine-nvim"] = {
-    loaded = true,
-    path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/tabnine-nvim",
-    url = "https://github.com/codota/tabnine-nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tiny-inline-diagnostic.nvim"] = {
+    loaded = true,
+    path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/tiny-inline-diagnostic.nvim",
+    url = "https://github.com/rachartier/tiny-inline-diagnostic.nvim"
   },
   undotree = {
     loaded = true,
@@ -253,10 +279,20 @@ _G.packer_plugins = {
     path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
+  },
   ["vim-table-mode"] = {
     loaded = true,
     path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/vim-table-mode",
     url = "https://github.com/dhruvasagar/vim-table-mode"
+  },
+  ["vim-vyper"] = {
+    loaded = true,
+    path = "/home/deadeye/.local/share/nvim/site/pack/packer/start/vim-vyper",
+    url = "https://github.com/vyperlang/vim-vyper"
   },
   vimtex = {
     loaded = true,
@@ -266,6 +302,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: codeql.nvim
+time([[Config for codeql.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\vcodeql\frequire\0", "config", "codeql.nvim")
+time([[Config for codeql.nvim]], false)
 -- Config for: nvim-window-picker
 time([[Config for nvim-window-picker]], true)
 try_loadstring("\27LJ\2\nø\2\0\0\6\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\t\0005\4\5\0005\5\4\0=\5\6\0045\5\a\0=\5\b\4=\4\n\3=\3\v\2B\0\2\1K\0\1\0\17filter_rules\abo\1\0\1\abo\0\fbuftype\1\2\0\0\rterminal\rfiletype\1\0\2\fbuftype\0\rfiletype\0\1\n\0\0\17codeql_panel\20codeql_explorer\aqf\20TelescopePrompt\21TelescopeResults\vnotify\nnoice\rNvimTree\rneo-tree\1\0\5\17filter_rules\0\20include_current\1\19autoselect_one\2\23other_win_hl_color\f#44cc41\25current_win_hl_color\f#e35e4f\nsetup\18window-picker\frequire\0", "config", "nvim-window-picker")
@@ -274,10 +314,17 @@ time([[Config for nvim-window-picker]], false)
 time([[Config for crates.nvim]], true)
 try_loadstring("\27LJ\2\n8\0\1\5\0\3\0\a6\1\0\0'\3\1\0B\1\2\0029\2\2\1\18\4\0\0B\2\2\1K\0\1\0\nsetup\vcrates\frequire\0", "config", "crates.nvim")
 time([[Config for crates.nvim]], false)
--- Config for: codeql.nvim
-time([[Config for codeql.nvim]], true)
-try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\vcodeql\frequire\0", "config", "codeql.nvim")
-time([[Config for codeql.nvim]], false)
+-- Load plugins in order defined by `after`
+time([[Sequenced loading]], true)
+vim.cmd [[ packadd nvim-lspconfig ]]
+vim.cmd [[ packadd lspsaga.nvim ]]
+
+-- Config for: lspsaga.nvim
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\flspsaga\frequire\0", "config", "lspsaga.nvim")
+
+vim.cmd [[ packadd nvim-treesitter ]]
+vim.cmd [[ packadd render-markdown.nvim ]]
+time([[Sequenced loading]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

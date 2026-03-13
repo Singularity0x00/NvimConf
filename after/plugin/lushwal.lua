@@ -1,0 +1,36 @@
+--vim.cmd("colorscheme lushwal")
+----require("lushwal").add_reload_hook({
+----	vim.cmd("LushwalCompile"),
+----})
+--init = function()
+--	vim.g.lushwal_configuration = {
+--		{
+--			transparent_background = true,
+--			compile_to_vimscript = false,
+--			terminal_colors = true,
+--			wal_path = vim.fn.expand("XDG_CACHE_HOME/wal/colors.json"),
+--			addons = {
+--				coc_nvim = true,
+--				dashboard_nvim = true,
+--				gitsigns_nvim = true,
+--				lightspeed_nvim = true,
+--				lspsaga_nvim = true,
+--				--lualine = true,
+--				--markdown = true,
+--				native_lsp = true,
+--				nerdtree = true,
+--				nvim_cmp = true,
+--				nvim_tree_lua = true,
+--				telescope_nvim = true,
+--				treesitter = true,
+--				which_key_nvim = true,
+--			},
+--		},
+--		color_overrides = function(colors)
+--			local overrides = {
+--				red = colors.color1,
+--			}
+--			return vim.tbl_extend("force", colors, overrides)
+--		end,
+--	}
+--end

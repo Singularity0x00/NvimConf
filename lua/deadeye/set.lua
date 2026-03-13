@@ -5,8 +5,9 @@ vim.opt.incsearch = true
 vim.opt.hlsearch = false
 
 vim.opt.updatetime = 50
+vim.opt.signcolumn = "yes"
 
 --vim.opt.termguicolors = true
 
-vim.api.nvim_create_user_command('PeekOpen', require('peek').open, {})
-vim.api.nvim_create_user_command('PeekClose', require('peek').close, {})
+vim.api.nvim_create_user_command("PeekOpen", require("peek").open, {})
+vim.api.nvim_create_user_command("PeekClose", require("peek").close, {})

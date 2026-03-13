@@ -8,6 +8,7 @@ lint.linters_by_ft = {
 	python = { "pylint" },
 	bash = { "shellcheck" },
 	solidity = { "solhint" },
+	--go = { "golangci_lint" },
 }
 local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
 

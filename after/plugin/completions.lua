@@ -1,5 +1,5 @@
 local cmp = require("cmp")
-local tabnine = require("cmp_tabnine.config")
+-- local tabnine = require("cmp_tabnine.config")
 
 require("luasnip.loaders.from_vscode").lazy_load()
 
@@ -20,14 +20,15 @@ cmp.setup({
 		{ name = "nvim_lsp" },
 		{ name = "luasnip" },
 		{ name = "crates" },
+		{ name = "render-markdown" },
 	}, {
 		{ name = "buffer" },
 	}),
 })
 
-tabnine:setup({
-	max_lines = 1000,
-	max_num_results = 20,
-	run_on_every_keystroke = true,
-	snippet_placeholder = "..",
-})
+--tabnine:setup({
+--	max_lines = 2000,
+--	max_num_results = 20,
+--	run_on_every_keystroke = true,
+--	snippet_placeholder = "..",
+--})

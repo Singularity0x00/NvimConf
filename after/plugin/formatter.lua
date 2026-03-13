@@ -17,6 +17,8 @@ conform.setup({
 		lua = { "stylua" },
 		python = { "isort", "black" },
 		solidity = { "forge_fmt" },
+		go = { "gofumpt" },
+		rust = { "RustFmt" },
 	},
 	format_on_save = {
 		lsp_fallback = true,
