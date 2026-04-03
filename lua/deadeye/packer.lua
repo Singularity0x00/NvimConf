@@ -13,16 +13,16 @@ return require("packer").startup(function(use)
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 	use({ "nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" } })
-	use({
-		"nvim-treesitter/playground",
-	})
+	--use({
+	--	"nvim-treesitter/playground",
+	--})
 	use({
 		"theprimeagen/harpoon",
 	})
 	use("stevearc/conform.nvim")
 	use("mfussenegger/nvim-lint")
-	use("mfussenegger/nvim-dap")
-	use({ "rcarriga/nvim-dap-ui", requires = { "nvim-neotest/nvim-nio" } })
+	--use("mfussenegger/nvim-dap")
+	--use({ "rcarriga/nvim-dap-ui", requires = { "nvim-neotest/nvim-nio" } })
 	use({
 		"mbbill/undotree",
 	})
@@ -40,12 +40,13 @@ return require("packer").startup(function(use)
 	use({
 		"lervag/vimtex",
 	})
+	use("RRethy/base16-nvim")
 	--use({
 	--	"oncomouse/lushwal",
 	--	requires = { { "rktjmp/lush.nvim", opt = true }, { "rktjmp/shipwright.nvim", opt = true } },
 	--})
-	use({ "RedsXDD/neopywal.nvim", as = "neopywal" })
-	use({ "uZer/pywal16.nvim", as = "pywal16" })
+	--use({ "RedsXDD/neopywal.nvim", as = "neopywal" })
+	--use({ "uZer/pywal16.nvim", as = "pywal16" })
 	--	use({
 	--		"AlphaTechnolog/pywal.nvim",
 	--		as = "pywal",
@@ -63,6 +64,7 @@ return require("packer").startup(function(use)
 		as = "peek",
 		run = "deno task --quiet build",
 	})
+	use("nvim-tree/nvim-web-devicons")
 	-- use({
 	-- 	"rmagatti/goto-preview",
 	-- 	dependencies = { "rmagatti/logger.nvim" },
