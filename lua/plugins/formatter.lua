@@ -18,7 +18,7 @@ return {
 			python = { "isort", "black" },
 			solidity = { "forge_fmt" },
 			go = { "gofumpt" },
-			rust = { "RustFmt" },
+			rust = { "rustfmt" },
 		},
 		format_on_save = {
 			lsp_fallback = true,

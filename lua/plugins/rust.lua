@@ -2,9 +2,9 @@ return {
 	{
 		"rust-lang/rust.vim",
 		filetype = "rust",
-		config = function()
-			vim.g.rustfmt_autosave = 1
-		end,
+		--	opts = function()
+		--		vim.g.rustfmt_autosave = 1
+		--	end,
 	},
 	{
 		"saecki/crates.nvim",
@@ -12,20 +12,12 @@ return {
 		opts = {},
 	},
 	{
-		"simrat39/rust-tools.nvim",
-		config = function()
-			vim.lsp.config["rust-tools"] = {
-				server = {
-					on_attach = function(_, bufnr)
-						-- Hover actions
-						vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
-						-- Code action groups
-						vim.keymap.set("n", "<Leader>ca", rt.code_action_group.code_action_group, { buffer = bufnr })
-					end,
-				},
-			}
-
-			vim.lsp.enable("rust-tools")
-		end,
+		"mrcjkb/rustaceanvim",
+		-- To avoid being surprised by breaking changes,
+		-- I recommend you set a version range
+		version = "^9",
+		-- This plugin implements proper lazy-loading (see :h lua-plugin-lazy).
+		-- No need for lazy.nvim to lazy-load it.
+		lazy = false,
 	},
 }
