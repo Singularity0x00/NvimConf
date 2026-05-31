@@ -11,3 +11,6 @@ vim.opt.signcolumn = "yes"
 
 --vim.api.nvim_create_user_command("PeekOpen", require("peek").open, {})
 --vim.api.nvim_create_user_command("PeekClose", require("peek").close, {}):
+--
+--
+vim.api.nvim_set_hl(0, "@comment.dev", { fg = "#7aa2f7", italic = true })

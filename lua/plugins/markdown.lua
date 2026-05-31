@@ -112,6 +112,12 @@ return {
             todo = { raw = '[-]', rendered = '󰥔 ', highlight = 'RenderMarkdownTodo', scope_highlight = nil },
         },
 		},
-		sign = { enabled = false, highlight = "RenderMarkdownSign" },
+		sign = { enabled = true, highlight = "RenderMarkdownSign" },
+	},
+	{
+		"Kicamon/markdown-table-mode.nvim",
+		config = function()
+			require("markdown-table-mode").setup()
+		end,
 	},
 }
